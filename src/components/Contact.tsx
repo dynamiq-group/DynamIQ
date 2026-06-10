@@ -59,7 +59,7 @@ export default function Contact() {
       <div className="w-full max-w-[1440px] mx-auto px-5 md:px-10 lg:px-20 relative z-10">
         
         {/* Label */}
-        <div className="text-label text-fog mb-20">LET'S BUILD</div>
+        <div className="text-label text-fog mb-20">LET&apos;S BUILD</div>
 
         {/* Headline */}
         <h2 className="text-display-xl font-light leading-none mb-32 flex flex-col items-start select-none">
@@ -78,12 +78,12 @@ export default function Contact() {
         <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
           
           <a 
-            href="mailto:hello@dynamiqstudio.com"
+            href="mailto:dynamiq.in@gmail.com"
             className="group relative inline-block"
             data-cursor="email"
           >
             <span className="text-heading-l text-parchment group-hover:text-voltage transition-colors duration-300">
-              hello@dynamiqstudio.com
+              dynamiq.in@gmail.com
             </span>
             {/* Ember underline on hover */}
             <span className="absolute bottom-1 left-0 w-full h-[2px] bg-ember scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>

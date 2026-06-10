@@ -143,12 +143,12 @@ export default function About() {
         {/* Philosophy Area */}
         <div className="w-full mt-40 max-w-4xl mx-auto flex flex-col items-center text-center">
           <h2 className="text-display-l italic text-parchment px-4 leading-[1.1]">
-            "We believe the best digital products are invisible — until they're not."
+            &quot;We believe the best digital products are invisible — until they&apos;re not.&quot;
           </h2>
 
           <div className="mt-16 w-full grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <p className="text-body-m text-fog">
-              We started this studio to escape the factory model of digital production. We don't believe in templates or rushing to launch. Every project is an opportunity to invent a new language for a brand.
+              We started this studio to escape the factory model of digital production. We don&apos;t believe in templates or rushing to launch. Every project is an opportunity to invent a new language for a brand.
             </p>
             <p className="text-body-m text-fog">
               Our approach pairs obsessive visual design with deep technical architecture. A site must not only look stunning, it must perform flawlessly. This duality is what we mean by DynamIQ Studio.
