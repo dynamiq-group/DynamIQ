@@ -2,16 +2,14 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
-import CustomCursor from "@/components/CustomCursor";
-import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
-import About from "@/components/About";
-import Portfolio from "@/components/Portfolio";
-import Services from "@/components/Services";
-import Stats from "@/components/Stats";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import CustomCursor from "@/components/ui/CustomCursor";
+import Navigation from "@/components/navbar/Navigation";
+import Hero from "@/components/herosection/Hero";
+import About from "@/components/about/About";
+import Portfolio from "@/components/services/Portfolio";
+import Services from "@/components/services/Services";
+import Contact from "@/components/contact/Contact";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -43,11 +41,9 @@ export default function Home() {
       <CustomCursor />
       <Navigation />
       <Hero />
-      <Marquee />
       <About />
       <Portfolio />
       <Services />
-      <Stats />
       <Contact />
       <Footer />
     </main>

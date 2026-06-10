@@ -2,11 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import CtaButton from "@/components/buttons/ctabutton";
+import Marquee from "@/components/herosection/Marquee";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
   const headlineLinesRef = useRef<(HTMLDivElement | null)[]>([]);
-  const ctaArrowRef = useRef<HTMLSpanElement>(null);
   const scrollLineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -23,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section 
+    <section
       ref={heroRef}
       className="relative w-full h-screen overflow-hidden flex flex-col justify-center bg-void text-parchment"
     >
@@ -32,10 +33,10 @@ export default function Hero() {
 
       {/* Content Container */}
       <div className="w-full max-w-[1440px] mx-auto px-5 md:px-10 lg:px-20 relative z-10">
-        
+
         {/* Label */}
         <p className="text-label text-fog mb-6 md:mb-10 overflow-hidden">
-          DIGITAL PRODUCT STUDIO — EST. 2024
+          DYNAMIQ — EST. 2026
         </p>
 
         {/* Headline */}
@@ -60,37 +61,28 @@ export default function Hero() {
           <p className="text-body-l text-fog max-w-md">
             We partner with founders and brands to craft digital products that stand apart — from concept to launch.
           </p>
-          
+
           {/* CTA */}
-          <button 
-            className="group flex items-center text-body-m font-medium text-parchment py-2 relative"
-            data-cursor="link"
-          >
-            <span className="relative z-10 transition-transform duration-300 group-hover:-translate-x-1">
-              Start a Project
-            </span>
-            <span 
-              ref={ctaArrowRef}
-              className="ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-2"
-            >
-              →
-            </span>
-            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-voltage scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-          </button>
+          <CtaButton text="Schedule a Call" />
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute right-5 md:right-10 bottom-10 hidden md:flex flex-col items-center gap-4 mix-blend-difference">
-        <span className="text-label text-fog rotate-90 translate-y-[-100%] origin-bottom translate-x-1/2 whitespace-nowrap">
+      <div className="absolute right-5 md:right-10 bottom-24 hidden md:flex flex-col items-center gap-4 mix-blend-difference">
+        <span className="text-label text-fog select-none [writing-mode:vertical-lr] whitespace-nowrap">
           SCROLL TO EXPLORE
         </span>
         <div className="w-[1px] h-10 bg-line relative overflow-hidden mt-20">
-          <div 
+          <div
             ref={scrollLineRef}
             className="absolute top-0 left-0 w-full h-1/2 bg-voltage animate-[scroll-down_1.5s_ease-in-out_infinite]"
           ></div>
         </div>
+      </div>
+
+      {/* Marquee */}
+      <div className="absolute bottom-0 left-0 w-full z-20">
+        <Marquee />
       </div>
     </section>
   );
